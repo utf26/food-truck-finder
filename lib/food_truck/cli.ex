@@ -2,7 +2,7 @@ defmodule FoodTruck.CLI do
   @moduledoc """
 This module provides a command-line interface for searching for food trucks.
 
-It uses the `FoodTruck.get_open_food_trucks/4` function to query the dataset of
+It uses the `FoodTruck.search/4` function to query the dataset of
 food trucks in San Francisco, and prints out a list of matching food trucks to
 the console.
 
@@ -32,7 +32,7 @@ the console.
   def run(_), do: show_help()
 
   defp search(food_type, latitude, longitude, radius) do
-    matching_trucks = FoodTruck.get_open_food_trucks(food_type, latitude, longitude, radius)
+    matching_trucks = FoodTruck.search(food_type, latitude, longitude, radius)
 
     if Enum.empty?(matching_trucks) do
       IO.puts("No food trucks found for '#{food_type}'.")

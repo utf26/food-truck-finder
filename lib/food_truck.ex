@@ -30,7 +30,7 @@ defmodule FoodTruck do
 
   ## Examples
 
-      iex> FoodTruck.get_open_food_trucks("taco", 37.7749, -122.4194)
+      iex> FoodTruck.search("taco", 37.7749, -122.4194)
       [
         %FoodTruck{
           applicant: "Tacos el Gordo",
@@ -67,7 +67,7 @@ defmodule FoodTruck do
 
   The function returns a list of `FoodTruck` struct, each representing an open food truck that serves the given food type and is within the specified radius around the given location. If no food trucks are found, an empty list is returned.
   """
-  def get_open_food_trucks(food_type, latitude, longitude, radius \\ 5.0) do
+  def search(food_type, latitude, longitude, radius \\ 5.0) do
     File.stream!(@csv_file_path, [:read])
     |> CSV.decode(headers: true)
     |> Stream.filter(fn
