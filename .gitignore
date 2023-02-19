@@ -22,3 +22,6 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 food_truck-*.tar
 
+# Ignore jetbrains and mac cache folders
+/.idea
+/.DS_Store
