@@ -1,5 +1,9 @@
+https://user-images.githubusercontent.com/20674817/220103494-b756e431-49bb-4b41-b470-baa0879fa79f.mp4
+
 # Food Truck Finder
-This is a simple Elixir application that searches for open food trucks in San Francisco based on the user's search criteria. The app provides a command-line interface that accepts a few arguments, such as the type of food, the user's location, and the search radius. The app queries a dataset of food trucks in San Francisco to find matching food trucks and displays the results on the console.
+This is a simple Elixir application that searches for open food trucks in
+
+ San Francisco based on the user's search criteria. The app provides a command-line interface that accepts a few arguments, such as the type of food, the user's location, and the search radius. The app queries a dataset of food trucks in San Francisco to find matching food trucks and displays the results on the console.
 
 ### Prerequisites
 
